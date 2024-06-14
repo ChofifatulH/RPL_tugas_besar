@@ -1,0 +1,448 @@
+/* Base Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  outline: none;
+
+  border: none;
+
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9dbd0;
+  padding: 30px;
+}
+
+.navbar-logo {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.username-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; /* Atur margin sesuai kebutuhan */
+}
+
+#profile-icon {
+  font-size: 30px;
+  margin-left: 300px;
+}
+
+#lengkapi-data {
+  font-size: 14px;
+}
+
+#profile-icon,
+.navbar-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #345e40;
+}
+
+.navbar-extra {
+  display: flex;
+  align-items: center;
+}
+
+#search-button,
+#shopping-cart-button,
+#hamburger-menu {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #345e40;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.navbar .search-form {
+  position: absolute;
+  top: 14.5%;
+  right: 4%;
+  background-color: #fff;
+  width: 40rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: black;
+}
+
+/* Shopping Cart */
+#shopping-cart-button {
+  position: relative;
+}
+
+#shopping-cart-button .quantity-badge {
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  color: white;
+}
+
+.shopping-cart {
+  position: fixed;
+  top: 14.5%;
+  right: -120%;
+  height: 90vh;
+  width: 20rem;
+  padding: 0 1.5rem;
+  background-color: #fff;
+  color: black;
+  transition: 0.3s;
+  overflow-y: auto;
+}
+
+.shopping-cart.active {
+  right: 0; /* tampilkan container cart ketika aktif */
+}
+
+.shopping-cart .cart-item {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #666;
+}
+
+.shopping-cart img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-detail h3 {
+  margin-top: 0;
+}
+
+.item-detail div {
+  font-size: 1rem;
+}
+
+
+.container .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: white;
+  border: 1px solid #c39f59;
+  padding-left: 2rem;
+  
+}
+
+.container .row form .input-group input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background: none;
+  color: #c39f59;
+  border: none;
+  border-bottom: 2px #c39f59;
+  outline: none;
+}
+
+.container .row form .input-group input::placeholder {
+  color: #c39f59;
+}
+
+/* Button */
+.btn {
+  display: block;
+  padding: 6px 14px;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin: 1rem auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* Main Container */
+.container .row {
+  display: flex;
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+  background-color: #d8b091; /* Change this to your desired background color */
+  padding: 5rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .row .btn{
+  margin-top: 10px;
+  padding: 10px 10px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #8e6749;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px rgba(1, 1, 3, 0.5);
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.container .row .btn:hover {
+  background-color: #c6a571;
+}
+
+.container .row .btn:hover {
+  transform: translateY(3px);
+}
+
+/* Main Container */
+.row {
+  display: flex;
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+  background-color: #d8b091; /* Change this to your desired background color */
+  padding: 20px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* MAIN CONTAINER */
+.container {
+  display: flex;
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+  min-height: 20vh; 
+  margin-top: 0px; 
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.section {
+  background-color: #D8B091;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  background-color: #D9DBD0;
+}
+
+.accordion-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion-body > h5 {
+  color:#666;
+}
+
+.accordion-button i {
+  padding-left: 10px; /* Atur ukuran padding sesuai kebutuhan Anda */
+}
+
+.accordion-active-color {
+  --accordion-active-color:#D9DBD0;
+}
+
+.accordion-button h6 {
+  padding-left: 10px; /* Atur ukuran padding sesuai kebutuhan Anda */
+  margin: 0;
+}
+
+
+/* ISI ACCORDION BODY PESANAN PRODUK */
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  justify-content: space-between;
+  border: 1px;
+  gap: 10px;
+  width: 100%;
+}
+
+.product img {
+  width: 80px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0;
+}
+
+.product-desc {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.product-name {
+  color: #345E40;
+  margin: 0px 0;
+}
+
+.product-price {
+  margin: 0px 0;
+}
+
+.order-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #345E40; /* Warna latar tombol sesuaikan dengan kebutuhan */
+  color: #fff; /* Warna teks tombol */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: auto;
+  width: 120px;
+}
+
+.order-button:hover {
+  background-color: #0056b3; /* Warna latar tombol saat dihover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 4rem; /* footer akan tetap di bagian bawah layar */
+  background-color: #8e6749;
+}
+
+.social-media {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 24px;
+  color: white;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #a5886e;
+}
+
+/* Untuk layar dengan lebar maksimum 768px */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px; /* Mengurangi padding untuk tampilan pada layar kecil */
+  }
+
+  .section-item {
+    width: 100%; /* Membuat item di dalam section menjadi full width */
+  }
+}
+
+/* Untuk layar dengan lebar maksimum 480px */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 20px 10px; /* Mengurangi padding navbar untuk layar sangat kecil */
+  }
+
+  .navbar-logo {
+    font-size: 16px; /* Mengurangi ukuran font logo navbar */
+  }
+
+  .navbar .search-form {
+    width: 80%; /* Mengurangi lebar form pencarian pada layar kecil */
+  }
+}
