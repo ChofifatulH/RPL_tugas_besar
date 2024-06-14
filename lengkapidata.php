@@ -20,7 +20,7 @@
     <div class="wrapper">
         <nav class="navbar" x-data>
             <div class="navbar-nav">
-                <a href="#" id="profile-icon"><i class="bi bi-person"></i></a>
+                <a href="user.php" id="profile-icon"><i class="bi bi-person"></i></a>
                 <div class="username-container">
                     <a href="#" class="lengkapi-data">Lengkapi Data</a>
                 </div>
@@ -58,7 +58,7 @@
                         Silakan unggah foto kartu identitas Anda. Pastikan gambar <br>yang diunggahjelas dan terbaca.
                         Format yang diterima adalah JPG, PNG.
                     </p>
-                    <button type="submit" class="btn">KIRIM PESAN</button>
+                    <button type="submit" class="btn">SIMPAN DATA</button>
                 </form>
 
             </div>
@@ -67,7 +67,7 @@
         <footer>
             <div class="social-media">
                 <a href="http://Instagram.com/fatisda_uns"><i class="bi-instagram"></i></a>
-                <a href="http://Wa.me/628156561711"><i class="bi bi-whatsapp"></i></a>
+                <a href="http://Wa.me/6282231365741"><i class="bi bi-whatsapp"></i></a>
                 <a href="https://www.tiktok.com/@spmbuns.official?_t=8n4dKHNJ0aW&_r=1"><i class="bi-tiktok"></i></a>
             </div>
             <p><a href="#home">Home</a> | <a href="#about">About</a> | <a href="#products">Katalog</a> | <a href="#contact">Contact</a></p>

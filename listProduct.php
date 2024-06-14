@@ -136,12 +136,12 @@
         </template>
       </div>
     </div>
-    <button type="button" class="btn">Kembali</button>
+    <a href="index.php" class="btn">KEMBALI</a>
   </b>
 
   <footer>
     <div class="social">
-      <a href="http://Wa.me/628156561711"><i class="bi-whatsapp"></i></a>
+      <a href="http://Wa.me/6282231365741"><i class="bi-whatsapp"></i></a>
       <a href="http://Instagram.com/fatisda_uns"><i class="bi-instagram"></i></a>
       <a href="https://www.tiktok.com/@spmbuns.official?_t=8n4dKHNJ0aW&_r=1"><i class="bi-tiktok"></i></a>
     </div>

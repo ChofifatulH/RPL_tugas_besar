@@ -18,14 +18,14 @@
 </head>
 <body>
 <nav class="navbar" x-data>
-    <div class="navbar-nav">
+    <div class="navbar-left">
         <ul class="nav">
             <li class="nav-item dropdown" x-data="{ open: false }" @click.away="open = false">
                 <a class="nav-link dropdown-toggle" href="#" @click="open = !open">
                     <i class="bi bi-person"></i>
                 </a>
                 <ul class="dropdown-menu" x-show="open" x-transition>
-                    <li><a class="dropdown-item" href="user.php"><i class="bi bi-person-circle"></i> Profile</a></li>
+                    <li><a class="dropdown-item" href="index.php"><i class="bi bi-house"></i> Home</a></li>
                     <li><a class="dropdown-item" href="login.php"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
                 </ul>
             </li>
@@ -175,7 +175,7 @@
     <footer>
         <div class="social-media">
           <a href="http://Instagram.com/fatisda_uns"><i class="bi-instagram"></i></a>
-          <a href="http://Wa.me/628156561711"><i class="bi bi-whatsapp"></i></a>
+          <a href="http://Wa.me/6282231365741"><i class="bi bi-whatsapp"></i></a>
           <a href="https://www.tiktok.com/@spmbuns.official?_t=8n4dKHNJ0aW&_r=1"><i class="bi-tiktok"></i></a>
         </div>
         <p><a href="#home">Home</a> | <a href="#about">About</a> | <a href="#products">Katalog</a> | <a href="#contact">Contact</a></p>

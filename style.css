@@ -682,6 +682,7 @@ transform: translateY(5px);
 .products .btn {
   margin-top: 2rem;
   padding: 1rem 3rem;
+  width: 200px;
   font-size: 1.4rem;
   color: #fff;
   background-color: var(--primary);
